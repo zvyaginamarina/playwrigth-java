@@ -1,2 +1,4 @@
-auto\tests\InstallBrowsers.class
-auto\tests\PlaywrightExampleTest.class
+tests\java\InstallBrowsers.class
+tests\java\BaseTest.class
+tests\java\PlaywrightExampleTest.class
+tests\java\PlaywrightSetupTest.class

@@ -39,6 +39,8 @@
     </dependencies>
 
     <build>
+
+        <testSourceDirectory>${project.basedir}/src/tests/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

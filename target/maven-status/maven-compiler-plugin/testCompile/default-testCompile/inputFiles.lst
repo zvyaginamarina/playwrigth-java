@@ -1,2 +1,4 @@
-D:\Java\playwrigth-java\src\test\java\auto\tests\InstallBrowsers.java
-D:\Java\playwrigth-java\src\test\java\auto\tests\PlaywrightExampleTest.java
+D:\Java\playwrigth-java\src\tests\java\BaseTest.java
+D:\Java\playwrigth-java\src\tests\java\InstallBrowsers.java
+D:\Java\playwrigth-java\src\tests\java\PlaywrightExampleTest.java
+D:\Java\playwrigth-java\src\tests\java\PlaywrightSetupTest.java
