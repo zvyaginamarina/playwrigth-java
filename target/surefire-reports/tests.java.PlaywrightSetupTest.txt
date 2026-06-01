@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.java.PlaywrightSetupTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.501 s -- in tests.java.PlaywrightSetupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.313 s -- in tests.java.PlaywrightSetupTest
