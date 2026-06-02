@@ -6,3 +6,4 @@ tests\java\BrowserSizeTest.class
 tests\java\LocaleAndGeolocationTest.class
 tests\java\BaseTest.class
 tests\java\PlaywrightExampleTest.class
+tests\java\UserAgentTest.class

@@ -20,6 +20,6 @@ public class LocaleAndGeolocationTest extends BaseTest {
 
         Page page = context.newPage();
         page.navigate("https://example.com");
-        System.out.println("Язык браузера: " + page.evaluate("navigator.language"));
+        System.out.println("Browser language: " + page.evaluate("navigator.language"));
     }
 }
