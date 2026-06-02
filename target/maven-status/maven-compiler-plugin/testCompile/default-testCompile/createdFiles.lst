@@ -1,9 +1,0 @@
-tests\java\DeviceList.class
-tests\java\InstallBrowsers.class
-tests\java\PlaywrightSetupTest.class
-tests\java\IphoneEmulationTest.class
-tests\java\BrowserSizeTest.class
-tests\java\LocaleAndGeolocationTest.class
-tests\java\BaseTest.class
-tests\java\PlaywrightExampleTest.class
-tests\java\UserAgentTest.class
