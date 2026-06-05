@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playwright Frame Practice</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #fafafa; max-width: 900px; }
+    h1 { color: #333; border-bottom: 2px solid #555; padding-bottom: 5px; }
+    h2 { color: #555; margin-top: 0; }
+    .section { margin: 25px 0; padding: 15px; background: white; border: 1px solid #ddd; border-radius: 4px; }
+    .frame-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+    iframe { border: 2px solid #888; background: white; display: block; }
+    code { background: #eee; padding: 2px 6px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+  <h1>Playwright Frame Practice</h1>
+  <p>Local fixture for practicing <code>Frame</code> and <code>FrameLocator</code>. Open via <code>file:///</code> URL in your Playwright test.</p>
+
+  <!-- TASK 1: Single editable iframe -->
+  <div class="section">
+    <h2>Task 1 — Editable iframe</h2>
+    <p>One iframe with <code>id="editor-frame"</code>, <code>name="editor"</code>. Contains input, button, result.</p>
+    <iframe id="editor-frame" name="editor" width="500" height="200" srcdoc='
+      <body style="font-family: Arial; padding: 10px;">
+        <h3>Edit me</h3>
+        <label>Name: <input id="name" type="text" placeholder="Enter your name"></label>
+        <br><br>
+        <button id="greet-btn" onclick="document.getElementById(&apos;result&apos;).textContent = &apos;Hello, &apos; + document.getElementById(&apos;name&apos;).value + &apos;!&apos;">Greet</button>
+        <p id="result"></p>
+      </body>
+    '></iframe>
+  </div>
+
+  <!-- TASK 2 & 3: Multiple named iframes -->
+  <div class="section">
+    <h2>Task 2 &amp; 3 — Multiple named iframes</h2>
+    <p>Four iframes with names: <code>frame-left</code>, <code>frame-middle</code>, <code>frame-right</code>, <code>frame-bottom</code>.</p>
+    <div class="frame-row">
+      <iframe name="frame-left" width="180" height="120" srcdoc='<body style="font-family: Arial;"><h3>LEFT</h3></body>'></iframe>
+      <iframe name="frame-middle" width="180" height="120" srcdoc='<body style="font-family: Arial;"><h3>MIDDLE</h3></body>'></iframe>
+      <iframe name="frame-right" width="180" height="120" srcdoc='<body style="font-family: Arial;"><h3>RIGHT</h3></body>'></iframe>
+    </div>
+    <iframe name="frame-bottom" width="565" height="80" srcdoc='<body style="font-family: Arial;"><h3>BOTTOM</h3></body>'></iframe>
+  </div>
+
+  <!-- BONUS: Nested iframes -->
+  <div class="section">
+    <h2>Bonus — Nested iframes</h2>
+    <p>Outer iframe (<code>name="outer"</code>) contains inner iframe (<code>name="inner"</code>) with a button.</p>
+    <iframe id="outer-frame" name="outer" width="500" height="240" srcdoc='
+      <body style="font-family: Arial; padding: 10px;">
+        <h3>Outer iframe</h3>
+        <iframe id="inner-frame" name="inner" width="400" height="120" srcdoc=&apos;<body style="font-family: Arial; padding: 5px;"><h4>Inner iframe</h4><button id="inner-btn">Click me</button><p id="inner-result">Result will appear here</p></body>&apos;></iframe>
+      </body>
+    '></iframe>
+  </div>
+
+</body>
+</html>
