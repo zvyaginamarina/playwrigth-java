@@ -117,7 +117,6 @@ public class AssertionTest {
         }
 
         assertThat(deleteBttn).hasCount(0);
-
     }
 
     @Test
@@ -145,10 +144,6 @@ public class AssertionTest {
 
         assertThat(page.locator("#flash")).containsText("You logged into a secure area!");
         assertThat(page.locator("#username")).containsText("Hi, " + userName);
-        // assertThat(page.locator("//*[@id=\"core\"]/div/div"))
-        // .containsText("Welcome to the Secure Area. When you are done click logout
-        // below.");
-
         assertThat(page.getByRole(AriaRole.HEADING, new GetByRoleOptions().setLevel(4)))
                 .containsText("Welcome to the Secure Area. When you are done click logout below.");
     }
