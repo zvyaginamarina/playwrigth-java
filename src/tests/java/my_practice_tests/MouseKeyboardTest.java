@@ -175,7 +175,7 @@ public class MouseKeyboardTest {
 
         page.waitForLoadState(LoadState.NETWORKIDLE);
 
-        Locator div = page.locator("#content > div > div > div > div > div");
+        Locator div = page.locator(".jscroll-added");
         int divCountBefore = div.count();
         System.out.println("BEFORE SCROLL: " + divCountBefore);
 
